@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>深圳大学AI药物设计课题组</title>
+
+
+  <title>Title</title>
+</head>
+<link rel="stylesheet" href="src/css/bootstrap.min.css">
+<link rel="stylesheet" href="src/css/common2.css">
+<link rel="stylesheet" href="src/css/index.css">
+<link >
+<link rel="stylesheet" href="src/css/HKUCSS.css">
+<style>
+
+
+    @font-face {
+        font-family:Glyphicons Halflings;
+        src: url(fonts/glyphicons-halflings-regular.eot);
+        src: url(fonts/glyphicons-halflings-regular.svg);
+        src: url(fonts/glyphicons-halflings-regular.ttf);
+        src: url(fonts/glyphicons-halflings-regular.woff);
+        src: url(fonts/glyphicons-halflings-regular.woff2);
+    }
+
+    /*pad端 6/26加*/
+    /*@media only screen and (min-width: 768px) and (max-width: 1200px) {*/
+    /*    .name{*/
+    /*        font-size: 15px;*/
+    /*        letter-spacing: 3px;*/
+    /*    }*/
+
+    /*    .small{*/
+    /*        font-size: 8px;*/
+    /*        transform-origin: left;*/
+    /*    }*/
+    /*}*/
+
+  .foot{
+    background:url(./img/bg3.png) no-repeat centenr;
+    background-size:contain;
+  }
+
+  .nav-link{
+    color:yellow;
+  }
+  .nav-link a:hover{
+        color:red;
+  }
+
+  #pubs{
+    text-decoration:underline;
+
+  }
+
+  li{
+    margin-top:20px;
+    margin-bottom:20px;
+
+  }
+
+  h2{
+    color:skyblue;
+  }
+
+   .nav1 {
+    display: inline-block;
+    color:red;
+
+    }
+
+  .nav-link{
+    color:yellow;
+  }
+  .nav-link a:hover{
+        color:red;
+  }
+
+
+.nav1 {
+    display: inline-block;
+    color:red;
+
+    }
+
+  .nav-link{
+    color:yellow;
+  }
+  .nav-link a:hover{
+        color:red;
+  }
+
+
+  @media (max-width: 992px){
+    .nav1 a{
+    color:white;
+    font-size:15px;
+    margin-left:5px;
+    margin-right:5px;
+    }
+
+    .nav1 a:hover{
+    color:yellow;
+
+}
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 768px){
+    .nav1 a{
+    color:white;
+    font-size:20px;
+    margin-left:10px;
+    margin-right:10px;
+ }
+
+    .nav1 a:hover{
+    color:yellow;
+
+}
+
+
+     .active{
+    color: orange;
+ }
+
+ }
+
+
+ li{
+  color:white;
+ }
+
+  li a {
+  color:white;
+ }
+
+  img{
+    display:block;
+    margin:0 auto;
+  |
+
+
+
+</style>
+
+
+<body>
+
+<div class="header" >
+  <div class="head-cont">
+    <div class="head-left">
+      <a href="./index.html" class="home-img">
+        <img src="src/img/深带图标.png" class="logo_school" />
+        <img src="src/img/带logo2.png" class="logo_collage" />
+      </a>
+      <div class="head-txt clearfix">
+        <div class="name b">AI药物设计课题组</div>
+        <div class="small">Artificial Intelligence Drug Design (AIDD) Group</div>
+      </div>
+    </div>
+
+
+
+    <div class="head-right" style="border: red">
+<!--      <div class="pc-con" style="border: red">-->
+<!--        <div class="head-nav2" style="background-color: ">-->
+<!--          <div class="nav ">-->
+<!--            <a href="./index.html">Home</a>-->
+<!--          </div>-->
+<!--          <div class="nav">-->
+<!--            <a href="./people.html">People</a>-->
+<!--          </div>-->
+
+<!--          <div class="nav active">-->
+<!--            <a href=./Publication.html">Publications</a>-->
+<!--          </div>-->
+<!--          <div class="nav">-->
+<!--            <a href="./Award.html">Grants&Awards</a>-->
+<!--          </div>-->
+<!--          <div class="nav">-->
+<!--            <a href="./Contact.html">Contact</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="mobile-con"> &lt;!&ndash;加了个btn-sm &ndash;&gt;-->
+<!--        <button class="navbar-toggler btn-lg" type="button" data-toggle="collapse" data-target="#navbarResponsive" style="background-color: black" >-->
+<!--          <span class="glyphicon glyphicon-th-list"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--          <ul class="navbar-nav ml-auto" style="background-color:black">-->
+<!--            <li class="nav-item active" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead " href="index.html"  >Home-->
+<!--                <span class="sr-only">(current)</span>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead" href="people.html" >People</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center;background-color:DimGray">-->
+<!--              <a class="nav-link lead" href="Publication.html" >Publications</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead" href="Award.html" >Grants & Awards</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead" href="Contact.html" >Contact</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+
+<!--        &lt;!&ndash;            <a href="javascript:void(0)" class="nav-btn"></a>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <div class="container">&ndash;&gt;-->
+<!--        &lt;!&ndash;            </div>&ndash;&gt;-->
+<!--      </div> &lt;!&ndash; mobile &ndash;&gt;-->
+
+
+
+
+      <!-- -->
+    </div>
+
+  </div>
+
+
+  <div style="color:white;text-align:center;background-color:black">
+
+    <div class="nav1 active" style="color:yellow">
+      <a href="./index.html">Home</a>
+    </div>
+    <div class="nav1">
+      <a href="./people.html">People</a>
+    </div>
+
+    <div class="nav1">
+      <a href="./Publication.html">Campus</a>
+    </div>
+    <div class="nav1">
+      <a href="./Award.html">Papers&Awards</a>
+    </div>
+    <div class="nav1">
+      <a href="./Contact.html">Contact</a>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+<!-- Header with Background Image -->
+<header class="business-header-publication clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">      <!--/*和min-height有关*/-->
+        <!-- <h1 class="display-4 text-center text-white mt-4">Artificial Intelligence Research</h1> -->
+        <h1 class="h1 text-center text-white mt-4" style="color: white">Campus</h1>
+<!--        <p class = "lead text-center text-white" style="color: white">The University of Shen Zhen</p>-->
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
+</header>
+
+
+
+<!-- Page Content -->
+<!--<div class="container" style="margin-top:20px; margin-bottom:50px">-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-8">-->
+<!--      <h2 class="mt-4">What We Do</h2>-->
+<!--      <p>The Artificial Intelligence Research Group is a research group in the Faculty of Business and Economics (HKU Business School) at the University of Hong Kong.-->
+<!--        Led by Professor Michael Chau, the group focuses on a vast range of research topics including business intelligence and analytics, health informatics,-->
+<!--        fintech, and security informatics. The group is particularly focused on text mining and natural language processing and has received funding from various-->
+<!--        funding agencies including the Hong Kong Research Grants Council, the Food and Health Bureau, and the Central Policy Unit.-->
+<!--        &lt;!&ndash;-->
+<!--        <p>-->
+<!--          <a class="btn btn-primary btn-lg" href="./contact.html">Call to Action &raquo;</a>-->
+<!--        </p>-->
+<!--        &ndash;&gt;-->
+<!--    </div>-->
+<!--    <div class="col-sm-4">-->
+<!--      <h2 class="mt-4">Contact Us</h2>-->
+<!--      <address>-->
+<!--        <strong>Artificial Intelligence Research Group</strong>-->
+<!--        <br>Room 1324, K. K. Leung Building-->
+<!--        <br>HKU Business School-->
+<!--        <br>The University of Hong Kong-->
+<!--        <br>Pokfulam Road-->
+<!--        <br>Hong Kong-->
+<!--        <br>-->
+<!--      </address>-->
+<!--      <address>-->
+<!--        <abbr title="Phone">P:</abbr>-->
+<!--        (852) 3917-1014-->
+<!--        <br>-->
+<!--        <abbr title="Email">E:</abbr>-->
+<!--        <a href="mailto:mchau@business.hku.hk">mchau@business.hku.hk</a>-->
+<!--      </address>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; /.row &ndash;&gt;-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img/bus-intel-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Business Analytics</h4>-->
+<!--          <p class="card-text">Proposing novel designs using data mining and text mining techniques to facilitate organizations in conducting business intelligence and analytics.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./analytics.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/smart-health-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Smart Health</h4>-->
+<!--          <p class="card-text">Using advanced data and text mining techniques on social media to facilitate decision making in physical and mental healthcare.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./healthcare.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/fintech-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">FinTech</h4>-->
+<!--          <p class="card-text">Analyzing large volumes of financial and social media data to reveal hidden relationship and patterns in equity and P2P markets.</p>-->
+<!--        </div>-->
+<!--        <div class="card-footer">-->
+<!--          <a href="./fintech.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/security-informatics-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Security Informatics</h4>-->
+<!--          <p class="card-text">Using data mining and text mining techniques in systems related to crime and security.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./security.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img/info-retrieval-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Information Retrieval</h4>-->
+<!--          <p class="card-text">Devising effective and efficient ways to address the problem of information overload.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./retrieval.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/it-edu-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">IT in Education</h4>-->
+<!--          <p class="card-text">Studying novel ways to apply information technologies in teaching and learning.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./education.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+<!--  &lt;!&ndash; /.row &ndash;&gt;-->
+
+<!--</div>-->
+<!-- /.container -->
+
+<div class="container-fluid" style="background-color:#272727">
+
+  <!-- Page Content -->
+  <div class="container" style="margin-top:20px; margin-bottom:50px">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+    <!-- 轮播（Carousel）指标 -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- 轮播（Carousel）项目 -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="/camp/img.png" alt="First slide">
+        <div class="carousel-caption"></div>
+      </div>
+      <div class="item">
+        <img src="/camp/img_1.png" alt="Second slide">
+        <div class="carousel-caption"></div>
+      </div>
+      <div class="item">
+        <img src="/camp/img_2.png" alt="Third slide">
+        <div class="carousel-caption"></div>
+      </div>
+    </div>
+    <!-- 轮播（Carousel）导航 -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+  <div class="lead" style="text-align:center;color:orange">2023/7/24 广州长隆团建合影留念</div>
+
+
+<div id="dataarea" style="font-size:20px;margin-top:20px;margin-bottom:20px;">
+
+  <section id="journal">
+    <div class="container">
+
+      <h2>Campus Time</h2>
+      <br>
+      <br>
+      <img src="/camp/CL1.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">广州长隆乐园一游（图片来自丹勤师兄）</div>
+      <br>
+      <br>
+      <img src="/camp/4.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">游园后合影纪念</div>
+      <br>
+      <br>
+      <img src="camp/CL2.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">刺激的垂直过山车（图片来自丹勤师兄）</div>
+      <br>
+      <br>
+      <img src="/camp/5.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">游园后合影纪念</div>
+      <br>
+      <br>
+      <img src="camp/CL3.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">乐园浪花（图片来自丹勤师兄）</div>
+      <br>
+      <br>
+      <img src="camp/6.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">游园后合影纪念</div>
+      <br>
+      <img src="camp/MS.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">民宿内Switch激战</div>
+      <br>
+      <img src="camp/PL.jpg" style="height:540px;width:840px" class="img-responsive"/>
+      <div class="lead" style="text-align:center;color:orange">清远古龙峡漂流一游</div>
+
+<!--      <div class="row">-->
+<!--        <div class="col-lg-10 mx-auto">-->
+<!--          <h2>Campus Time</h2>-->
+
+
+
+
+
+
+<!--          <ol class="col-md-offset-1">-->
+
+<!--            <li class="ba bigdata ml">Chau, M., Xu, J., Cao, J., Lam, P., Shiu, B.-->
+<!--              "<a id="pubs" href="./papers/Blog_ITPro.pdf" target="_blank">A Blog Mining-->
+<!--                Framework</a>,"-->
+<!--              <i>IEEE IT Professional</i>,-->
+<!--              11(1), 36-41, 2009.</li>-->
+<!--            <li class="ir">Chau, M., Lu, Y., Fang, X., and Yang, C. C.-->
+<!--              "<a id="pubs" href="./papers/CharacterUsage_IPM.pdf" target="_blank">Characteristics of-->
+<!--                Character Usage in Chinese Web Searching</a>,"-->
+<!--              <i>Information Processing and Management (IP&M)</i>,-->
+<!--              45, 115-130, 2009.</li>-->
+<!--            <li class="ir">Chau, M., Qin, J., Zhou, Y., Tseng, C., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/SpidersRUs_DSS.pdf" target="_blank">SpidersRUs: Creating-->
+<!--                Specialized Search Engines in Multiple Languages</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              Special Issue on Multilingual Knowledge Management,-->
+<!--              45(3), 621-640, 2008.</li>-->
+<!--            <li class="ba ir ml">Roussinov, D. and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/QA_JAIS.pdf" target="_blank">Combining Information Seeking-->
+<!--                Services into a Meta Supply Chain of Facts</a>,"-->
+<!--              <i>Journal of the Association for Information Systems (JAIS)</i>,-->
+<!--              9(3), 175-199, 2008.</li>-->
+<!--            <li class="ba ir ml">Chau, M. and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/WebPageFiltering.pdf" target="_blank">A Machine Learning-->
+<!--                Approach to Web Page Filtering Using Content-->
+<!--                and Structure Analysis</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              44(2), 482-494, 2008.</li>-->
+<!--            <li>Chau, M., Zeng, D., and Tanniru, M.-->
+<!--              "<a id="pubs" href="./papers/ISeBEditorial.pdf" target="_blank">Editorial: Special Issue-->
+<!--                on WEB 2006</a>,"-->
+<!--              <i>Information Systems and e-Business Management (ISeB)</i>,-->
+<!--              6(4), 317-319, 2008.</li>-->
+<!--            <li>Cheung, Y. M. and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/CISReport.pdf" target="_blank">Hong Kong Chapter-->
+<!--                Report</a>,"-->
+<!--              <i>IEEE Computational Intelligence Magazine</i>,-->
+<!--              3(2), 18-20, 2008.</li>-->
+<!--            <li>Chau, M. and Sugumaran, V.-->
+<!--              "<a id="pubs" href="./papers/IJEB2008.pdf" target="_blank">Editorial: Special Issue on-->
+<!--                Advances in e-Business Research - -->
+<!--                Papers from the Fifth Workshop on Electronic Business (WEB 2006)</a>,"-->
+<!--              <i>International Journal of Electronic Business (IJEB)</i>,-->
+<!--              6(1), 1-3, 2008.</li>-->
+<!--            <li class="security bigdata ml">Xu, J., Wang, G., Li, J., and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/ComplexProblemSolving.pdf" target="_blank">Complex Problem-->
+<!--                Solving: Identity Matching Based on Social Contextual Information</a>,"-->
+<!--              <i>Journal of the Association for Information Systems (JAIS)</i>,-->
+<!--              8(10), 525-545, 2007.</li>-->
+<!--            <li class="ba ml ir">Fang, X., Sheng, O. R. L., and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/ServiceFinder_TOIS.pdf" target="_blank">ServiceFinder: A-->
+<!--                Method Towards Enhancing Service Portals</a>,"-->
+<!--              <i>ACM Transactions on Information Systems (TOIS)</i>,-->
+<!--              25(4), 2007.</li>-->
+<!--            <li class="ir">Chau, M., Fang, X., and Yang, C. C.-->
+<!--              "<a id="pubs" href="./papers/WebSearchingInChinese.pdf" target="_blank">Web Searching in-->
+<!--                Chinese: A Study of a Search Engine in Hong Kong</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and Technology (JASIST)</i>,-->
+<!--              58(7), 1044-1054, 2007.</li>-->
+<!--            <li class="ir">Chau, M., Fang, X., and Sheng, O. R. L.-->
+<!--              "<a id="pubs" href="./papers/WhatArePeopleSearching.pdf" target="_blank">What Are People-->
+<!--                Searching on Government Web Sites?</a>"-->
+<!--              <i>Communications of the ACM (CACM)</i>,-->
+<!--              50(4), 87-92, 2007.</li>-->
+<!--            <li class="ir ml health">Chau, M. and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/HopfieldNet.pdf" target="_blank">Incorporating Web Analysis-->
+<!--                into Neural Networks: An Example in Hopfield Net Searching</a>,"-->
+<!--              <i>IEEE Transactions on Systems, Man, and Cybernetics (Part C)</i>,-->
+<!--              37(3), 352-358, 2007.</li>-->
+<!--            <li class="security ml">Schroeder, J., Xu, J., Chen, H., and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/AutomatedCriminalLinkAnalysis.pdf"-->
+<!--                  target="_blank">Automated Criminal Link Analysis Based on Domain Knowledge</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and Technology (JASIST)</i>,-->
+<!--              58(6), 842-855, 2007.</li>-->
+<!--            <li class="ba ir ml hci">Chau, M., Shiu, B., Chan, I., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/Redips_JASIST.pdf" target="_blank">Redips: Backlink Search-->
+<!--                and Analysis on the Web for Business Intelligence Analysis</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and Technology (JASIST)</i>,-->
+<!--              58(3), 351-365, 2007.</li>-->
+<!--            <li class="security bigdata">Chau, M. and Xu, J.-->
+<!--              "<a id="pubs" href="./papers/Blog_IJHCS.pdf" target="_blank">Mining Communities and-->
+<!--                Their Relationships in Blogs: A Study of Online Hate Groups</a>,"-->
+<!--              <i>International Journal of Human-Computer Studies (IJHCS)</i>,-->
+<!--              Special Issue on Information Security in the Knowledge Economy,-->
+<!--              65(1), 57-70, 2007.</li>-->
+<!--            <li class="ba ir hci">Chau, M. and Chan, I.-->
+<!--              "<a id="pubs" href="./papers/Refinery_IJEB.pdf" target="_blank">Refinery of an-->
+<!--                Internet-based Search Tool: Exploring Perceptions from Information-->
+<!--                Systems Practitioners</a>,"-->
+<!--              <i>International Journal of Electronic Business (IJEB)</i>,-->
+<!--              4(5), 350-363, 2006.</li>-->
+<!--            <li class="ir">Chau, M., Huang, Z., Qin, J., Zhou, Y., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/NanoPort_DSS.pdf" target="_blank">Building a Scientific-->
+<!--                Knowledge Web Portal: The NanoPort Experience</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              42(2), 1216-1238, 2006.</li>-->
+<!--            <li class="ir ml">Qin, J., Zhou, Y., Chau, M., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/MultilingualWebRetrieval.pdf" target="_blank">Multilingual-->
+<!--                Web Retrieval: An Experiment in English-Chinese Business-->
+<!--                Intelligence</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and-->
+<!--                Technology (JASIST)</i>,-->
+<!--              57(5), 671-683, 2006.</li>-->
+<!--            <li class="security">Zhao, J. L., Bi, H. H., Chen, H., Zeng, D. D., Lin, C., and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/ProcessDrivenCollaborationSupport.pdf"-->
+<!--                  target="_blank">Process-Driven Collaboration Support for Intra-Agency Crime-->
+<!--                Analysis</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              41(3), 616-633, 2006.</li>-->
+<!--            <li class="ir">Chau, M., Fang, X., and Sheng, O. R. L.-->
+<!--              "<a id="pubs" href="./papers/QueryLogs.pdf" target="_blank">Analysis of the Query Logs-->
+<!--                of a Web Site Search Engine</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and-->
+<!--                Technology (JASIST)</i>,-->
+<!--              56(13), 1363-1376, 2005.</li>-->
+<!--            <li class="security ml hci">Xiang, Y., Chau, M., Atabakhsh, H., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/VisualizingCriminalRelationships.pdf"-->
+<!--                  target="_blank">Visualizing Criminal Relationships: Comparison of a Hyperbolic Tree-->
+<!--                and	a Hierarchical List</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              41(1), 69-83, 2005.</li>-->
+<!--            <li class="ml edu">Lin, M., Chau, M., Cao, J., Nunamaker, J. F.-->
+<!--              "<a id="pubs" href="./papers/AutomatedVideoSegmentation.pdf" target="_blank">Automated-->
+<!--                Video Segmentation for Lecture Videos: A Linguistics-based Approach</a>,"-->
+<!--              <i>International Journal of Technology and Human Interaction (IJTHI)</i>,-->
+<!--              1(2), 27-45, 2005.</li>-->
+<!--            <li class="ir ml">Chau, M.-->
+<!--              "<a id="pubs" href="./papers/SearchingAndMining.pdf" target="_blank">Searching and-->
+<!--                Mining the Web for Personalized and Specialized Information</a>,"-->
+<!--              <i>ACM SIGIR Forum</i>,-->
+<!--              39(1), 57, 2005.</li>-->
+<!--            <li class="ir ml">Chen, H. and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/WebMining.pdf" target="_blank">Web Mining: Machine Learning-->
+<!--                for Web Applications</a>,"-->
+<!--              <i>Annual Review of Information Science and Technology (ARIST)</i>,-->
+<!--              38, 289-329, 2004.</li>-->
+<!--            <li class="security ml">Chen, H., Chung, W., Xu. J., Wang, G., Qin, Y., and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/CrimeDataMiningFramework.pdf" target="_blank">Crime Data-->
+<!--                Mining: A General Framework and Some Examples</a>,"-->
+<!--              <i>IEEE Computer</i>,-->
+<!--              37(4), 50-56, 2004.</li>-->
+<!--            <li class="edu ir">Chau, M., Huang, Z., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/TeachingKeyTopics.pdf" target="_blank">Teaching Key Topics-->
+<!--                in Computer Science and Information Systems-->
+<!--                through a Search Engine Project</a>,"-->
+<!--              <i>ACM Journal on Educational Resources in Computing (JERIC)</i>,-->
+<!--              3(3), 1-14, 2003.</li>-->
+<!--            <li class="ir health ml hci">Chen, H., Fan, H., Chau, M., and Zeng, D.-->
+<!--              "<a id="pubs" href="./papers/CancerSpider.pdf" target="_blank">Testing a Cancer Meta-->
+<!--                Spider</a>,"-->
+<!--              <i>International Journal of Human-Computer Studies (IJHCS)</i>,-->
+<!--              59(5), 755-776, 2003.</li>-->
+<!--            <li class="ir ml">Chau, M. and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/VerticalSpiders.pdf" target="_blank">Comparison of Three-->
+<!--                Vertical Search Spiders</a>,"-->
+<!--              <i>IEEE Computer</i>,-->
+<!--              36(5), 56-62, 2003.</li>-->
+<!--            <li class="ir ml health hci">Chen, H., Lally, A. M., Zhu, B., and Chau, M.-->
+<!--              "<a id="pubs" href="./papers/HelpfulMed.pdf" target="_blank">HelpfulMed: Intelligent-->
+<!--                Searching for Medical Information over the Internet</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and-->
+<!--                Technology (JASIST)</i>, Special Issue on Web Retrieval and Mining,-->
+<!--              54(7), 683-694, 2003.</li>-->
+<!--            <li class="ir">Chau, M., Zeng, D., Chen, H., Huang, M., and Hendriawan, D.-->
+<!--              "<a id="pubs" href="./papers/CollaborativeWebMining.pdf" target="_blank">Design and-->
+<!--                Evaluation of a Multi-agent Collaborative Web Mining System</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              Special Issue on Web Retrieval and Mining,-->
+<!--              35(1), 167-183, 2003.</li>-->
+<!--            <li class="ba ir hci">Chen, H., Chau, M., and Zeng, D.-->
+<!--              "<a id="pubs" href="./papers/CISpider.pdf" target="_blank">CI Spider: A Tool for-->
+<!--                Competitive Intelligence on the Web</a>,"-->
+<!--              <i>Decision Support Systems (DSS)</i>,-->
+<!--              34(1), 1-17, 2002.</li>-->
+<!--            <li class="ir hci">Chen, H., Fan, H., Chau, M., and Zeng, D.-->
+<!--              "<a id="pubs" href="./papers/MetaSpider.pdf" target="_blank">MetaSpider: Meta-Searching-->
+<!--                and Categorization on the Web</a>,"-->
+<!--              <i>Journal of the American Society for Information Science and Technology (JASIST)</i>,-->
+<!--              52(13), 1134-1147, 2001.</li>-->
+<!--          </ol>-->
+
+<!--          &lt;!&ndash; <a class="btn btn-primary btn-sm" href="#">Back to top &raquo;</a> &ndash;&gt;-->
+<!--          <p></p>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+  </section>
+
+  <section id="conference">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+
+<!--          <h2 id="5">Conference Publications</h2>-->
+<!--          <ol class="col-md-offset-1">-->
+
+<!--            <li class="security ml">Atabakhsh, H., Schroeder, J., Chen, H., Chau, M.,-->
+<!--              Xu, J., Zhang, J., and Bi, H.-->
+<!--              "<a id="pubs" href="./papers/COPLINKKM.pdf" target="_blank">COPLINK Knowledge Management-->
+<!--                for Law Enforcement: Text Analysis,-->
+<!--                Visualization and Collaboration</a>,"-->
+<!--              in <i>Proceedings of the National Conference for Digital Government-->
+<!--                Research (dg.o 2001)</i>,-->
+<!--              Los Angeles, California, USA, May 21-23, 2001.</li>-->
+<!--            <li class="security ml">Chau, M., Atabakhsh, H., Zeng, D., and Chen, H.-->
+<!--              "<a id="pubs" href="./papers/COPLINKCollaboration.pdf" target="_blank">Building an-->
+<!--                Infrastructure for Law Enforcement Information Sharing and-->
+<!--                Collaboration: Design Issues and Challenges</a>,"-->
+<!--              in <i>Proceedings of the National Conference for Digital Government-->
+<!--                Research (dg.o 2001)</i>,-->
+<!--              Los Angeles, California, USA, May 21-23, 2001.</li>-->
+<!--            <li class="fintech">Yen, J., Chung, A., Ho, H., Tam, B., Lau, R., Chau, M., and Hwang, K.-->
+<!--              "<a id="pubs" href="./papers/FinancialMultiAgent.pdf" target="_blank">Collaborative and-->
+<!--                Scalable Financial Analysis with Multi-agent Technology</a>,"-->
+<!--              in <i>Proceedings of the Thirty-Second Hawaii International Conference on-->
+<!--                System Sciences (HICSS-32)</i>,-->
+<!--              Maui, Hawaii, USA, January 5-8, 1999.</li>-->
+<!--          </ol>-->
+
+
+          <!-- <a class="btn btn-primary btn-sm" href="#">Back to top &raquo;</a> -->
+          <p>
+            <br>
+
+            <a class="btn btn-primary btn-sm col-md-offset-1" href="#">Back to top &raquo;</a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Footer -->
+
+<div class="foot container-fluid " style="background:url(./img/学校图.png) no-repeat;background-size:100% 100%;opacity:0.9;" >
+<!--  <div style="margin-bottom:20px;margin-top:20px"><img class="img-responsive center-block" src="./img/实验室666.png"/></div>-->
+  <div class="col-sm-4 my-4" style="margin-bottom:40px">
+    <img class="img-responsive center-block" src="./img2/add.png"style="margin-bottom:10px;width:40px;height:40px"/>
+    <p class="lead text-primary" style="text-align:center;color:white">通讯地址</p>
+    <p class="lead text-primary" style="text-align:center;color:white">广东省深圳市南山区深圳大学沧海校区致真楼10楼</p>
+  </div>
+  <div class="col-sm-4 my-4" style="margin-bottom:40px">
+    <img class="img-responsive center-block" src="./img2/tel.png" style="margin-bottom:10px;width:40px;height:40px"/>
+    <p class="lead text-primary" style="text-align:center;color:white">联系电话</p>
+    <p class="lead text-primary" style="text-align:center;color:white">0755-26946884</p>
+  </div>
+  <div class="col-sm-4 my-4" style="margin-bottom:40px">
+    <img class="img-responsive center-block" src="./img2/eml.png" style="margin-bottom:10px;width:40px;height:40px"/>
+    <p class="lead text-primary" style="text-align:center;color:white">电子邮件</p>
+    <p class="lead text-primary" style="text-align:center;color:white"><script language=JavaScript>rewin1="jijunkai";rewin2="szu";rewin3=".edu.cn";document.write(rewin1+'@'+rewin2+rewin3);</script>
+      </h2></p>
+  </div>
+  <p>     </p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="src/css/jquery-3.4.1.js"></script>
+<script src="src/css/bootstrap.min.js"></script>
+<script src="src/css/common.js"></script>
+</html>
+
+
+
+
+
+
+<!--                </div>-->
+
+<!--            </div>-->
+<!--       </div>-->

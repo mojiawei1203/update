@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>深圳大学AI药物设计课题组</title>
+
+
+  <title>Title</title>
+</head>
+<link rel="stylesheet" href="src/css/bootstrap.min.css">
+<link rel="stylesheet" href="src/css/common2.css">
+<link rel="stylesheet" href="src/css/index.css">
+<link >
+<link rel="stylesheet" href="src/css/HKUCSS.css">
+<style>
+
+
+    @font-face {
+        font-family:Glyphicons Halflings;
+        src: url(fonts/glyphicons-halflings-regular.eot);
+        src: url(fonts/glyphicons-halflings-regular.svg);
+        src: url(fonts/glyphicons-halflings-regular.ttf);
+        src: url(fonts/glyphicons-halflings-regular.woff);
+        src: url(fonts/glyphicons-halflings-regular.woff2);
+    }
+
+    /*pad端 6/26加*/
+    /*@media only screen and (min-width: 768px) and (max-width: 1200px) {*/
+    /*    .name{*/
+    /*        font-size: 15px;*/
+    /*        letter-spacing: 3px;*/
+    /*    }*/
+
+    /*    .small{*/
+    /*        font-size: 8px;*/
+    /*        transform-origin: left;*/
+    /*    }*/
+    /*}*/
+
+  .foot{
+    background:url(./img/bg3.png) no-repeat centenr;
+    background-size:contain;
+  }
+
+
+   .nav1 {
+    display: inline-block;
+    color:red;
+
+    }
+
+  .nav-link{
+    color:yellow;
+  }
+  .nav-link a:hover{
+        color:red;
+  }
+
+
+  @media (max-width: 992px){
+    .nav1 a{
+    color:white;
+    font-size:15px;
+    margin-left:5px;
+    margin-right:5px;
+    }
+
+    .nav1 a:hover{
+    color:yellow;
+
+}
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+ @media (min-width: 768px){
+    .nav1 a{
+    color:white;
+    font-size:20px;
+    margin-left:10px;
+    margin-right:10px;
+ }
+
+    .nav1 a:hover{
+    color:yellow;
+
+}
+
+
+     .active{
+    color: orange;
+ }
+
+ }
+
+ li{
+  color:white;
+ }
+
+  li a {
+  color:white;
+ }
+
+  div p {
+   font-family: "Times New Roman";
+    color:white;
+  }
+
+   div p span{
+    font-family: "Times New Roman";
+    color:yellow;
+  }
+
+
+   img{
+    display:block;
+    margin:0 auto;
+  |
+
+
+ body{
+            font-family: "Times New Roman";
+        }
+
+</style>
+
+
+<body>
+
+<div class="header" >
+  <div class="head-cont">
+    <div class="head-left">
+      <a href="./index.html" class="home-img">
+        <img src="src/img/深带图标.png" class="logo_school" />
+        <img src="src/img/带logo2.png" class="logo_collage" />
+      </a>
+      <div class="head-txt clearfix">
+        <div class="name b">AI药物设计课题组</div>
+        <div class="small">Artificial Intelligence Drug Design (AIDD) Group</div>
+      </div>
+    </div>
+
+
+
+    <div class="head-right" style="border: red">
+<!--      <div class="pc-con" style="border: red">-->
+<!--        <div class="head-nav2" style="background-color: ">-->
+<!--          <div class="nav ">-->
+<!--            <a href="./index.html">Home</a>-->
+<!--          </div>-->
+<!--          <div class="nav">-->
+<!--            <a href="./people.html">People</a>-->
+<!--          </div>-->
+
+<!--          <div class="nav">-->
+<!--            <a href="./Publication.html">Publications</a>-->
+<!--          </div>-->
+<!--          <div class="nav active">-->
+<!--            <a href="./Award.html">Grants&Awards</a>-->
+<!--          </div>-->
+<!--          <div class="nav">-->
+<!--            <a href="./Contact.html">Contact</a>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="mobile-con"> &lt;!&ndash;加了个btn-sm &ndash;&gt;-->
+<!--        <button class="navbar-toggler btn-lg" type="button" data-toggle="collapse" data-target="#navbarResponsive" style="background-color: black" >-->
+<!--          <span class="glyphicon glyphicon-th-list"></span>-->
+<!--        </button>-->
+<!--        <div class="collapse navbar-collapse" id="navbarResponsive">-->
+<!--          <ul class="navbar-nav ml-auto" style="background-color:black">-->
+<!--            <li class="nav-item active" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead " href="index.html"  >Home-->
+<!--                <span class="sr-only">(current)</span>-->
+<!--              </a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead" href="people.html" >People</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead" href="Publication.html" >Publications</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center;background-color:DimGray">-->
+<!--              <a class="nav-link lead" href="Award.html" >Grants & Awards</a>-->
+<!--            </li>-->
+
+<!--            <li class="nav-item" style="margin-top:10px;text-align:center">-->
+<!--              <a class="nav-link lead" href="Contact.html" >Contact</a>-->
+<!--            </li>-->
+<!--          </ul>-->
+<!--        </div>-->
+
+
+<!--        &lt;!&ndash;            <a href="javascript:void(0)" class="nav-btn"></a>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <div class="container">&ndash;&gt;-->
+<!--        &lt;!&ndash;            </div>&ndash;&gt;-->
+<!--      </div> &lt;!&ndash; mobile &ndash;&gt;-->
+
+
+
+
+      <!-- -->
+    </div>
+
+  </div>
+
+  <div style="color:white;text-align:center;background-color:black">
+
+    <div class="nav1 active" style="color:yellow">
+      <a href="./index.html">Home</a>
+    </div>
+    <div class="nav1">
+      <a href="./people.html">People</a>
+    </div>
+
+    <div class="nav1">
+      <a href="./Publication.html">Campus</a>
+    </div>
+    <div class="nav1">
+      <a href="./Award.html">Papers&Awards</a>
+    </div>
+    <div class="nav1">
+      <a href="./Contact.html">Contact</a>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+<!-- Header with Background Image -->
+<header class="business-header-award clearfix">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10">      <!--/*和min-height有关*/-->
+        <!-- <h1 class="display-4 text-center text-white mt-4">Artificial Intelligence Research</h1> -->
+        <h1 class="h1 text-center text-white mt-4" style="color: white;">Papers&Awards</h1>
+        <!--        <p class = "lead text-center text-white" style="color: white">The University of Shen Zhen</p>-->
+      </div>
+      <div class="clearfix"></div>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="clearfix"></div>
+</header>
+
+
+
+<!-- Page Content -->
+<!--<div class="container" style="margin-top:20px; margin-bottom:50px">-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-8">-->
+<!--      <h2 class="mt-4">What We Do</h2>-->
+<!--      <p>The Artificial Intelligence Research Group is a research group in the Faculty of Business and Economics (HKU Business School) at the University of Hong Kong.-->
+<!--        Led by Professor Michael Chau, the group focuses on a vast range of research topics including business intelligence and analytics, health informatics,-->
+<!--        fintech, and security informatics. The group is particularly focused on text mining and natural language processing and has received funding from various-->
+<!--        funding agencies including the Hong Kong Research Grants Council, the Food and Health Bureau, and the Central Policy Unit.-->
+<!--        &lt;!&ndash;-->
+<!--        <p>-->
+<!--          <a class="btn btn-primary btn-lg" href="./contact.html">Call to Action &raquo;</a>-->
+<!--        </p>-->
+<!--        &ndash;&gt;-->
+<!--    </div>-->
+<!--    <div class="col-sm-4">-->
+<!--      <h2 class="mt-4">Contact Us</h2>-->
+<!--      <address>-->
+<!--        <strong>Artificial Intelligence Research Group</strong>-->
+<!--        <br>Room 1324, K. K. Leung Building-->
+<!--        <br>HKU Business School-->
+<!--        <br>The University of Hong Kong-->
+<!--        <br>Pokfulam Road-->
+<!--        <br>Hong Kong-->
+<!--        <br>-->
+<!--      </address>-->
+<!--      <address>-->
+<!--        <abbr title="Phone">P:</abbr>-->
+<!--        (852) 3917-1014-->
+<!--        <br>-->
+<!--        <abbr title="Email">E:</abbr>-->
+<!--        <a href="mailto:mchau@business.hku.hk">mchau@business.hku.hk</a>-->
+<!--      </address>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  &lt;!&ndash; /.row &ndash;&gt;-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img/bus-intel-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Business Analytics</h4>-->
+<!--          <p class="card-text">Proposing novel designs using data mining and text mining techniques to facilitate organizations in conducting business intelligence and analytics.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./analytics.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/smart-health-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Smart Health</h4>-->
+<!--          <p class="card-text">Using advanced data and text mining techniques on social media to facilitate decision making in physical and mental healthcare.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./healthcare.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/fintech-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">FinTech</h4>-->
+<!--          <p class="card-text">Analyzing large volumes of financial and social media data to reveal hidden relationship and patterns in equity and P2P markets.</p>-->
+<!--        </div>-->
+<!--        <div class="card-footer">-->
+<!--          <a href="./fintech.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/security-informatics-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Security Informatics</h4>-->
+<!--          <p class="card-text">Using data mining and text mining techniques in systems related to crime and security.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./security.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img/info-retrieval-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">Information Retrieval</h4>-->
+<!--          <p class="card-text">Devising effective and efficient ways to address the problem of information overload.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./retrieval.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--    <div class="col-sm-4 my-4">-->
+<!--      <div class="card">-->
+<!--        <img class="card-img-top" src="./img2/it-edu-300-200.png" alt="">-->
+<!--        <div class="card-body">-->
+<!--          <h4 class="card-title">IT in Education</h4>-->
+<!--          <p class="card-text">Studying novel ways to apply information technologies in teaching and learning.</p>-->
+<!--        </div>-->
+
+<!--        <div class="card-footer">-->
+<!--          <a href="./education.html" class="btn btn-primary">Details &raquo;</a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+<!--  &lt;!&ndash; /.row &ndash;&gt;-->
+
+<!--</div>-->
+<!-- /.container -->
+
+<div class="container-fluid" style="background-color:#272727">
+
+  <div id="dataarea" style="font-size:20px;margin-top:20px;margin-bottom:20px;">
+
+    <section id="journal">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2 style="color:skyblue">Papers</h2>
+
+<!--            <div class="header">-->
+
+<!--              <span>2022</span>-->
+<!--            </div>-->
+            <div>
+
+              <p>
+                Yajiao Tang, Zhenyu Song, Yulin Zhu, Maozhang Hou, Cheng Tang, and Junkai Ji.
+                "Adopting a dendritic neural model for predicting stock price index movement."
+                <span style="font-style: italic;font-weight: bold" >Expert Systems with Applications</span> (2022): 117637.
+                [<a href="https://sciencedirect.53yu.com/science/article/abs/pii/S0957417422009447"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+
+              <p>
+                Cheng Tang, Junkai Ji, Qiuzhen Lin, and Yan Zhou. "Evolutionary Neural Architecture Design of Liquid State Machine for
+                Image Classification."  <span style="font-style: italic;font-weight: bold" >ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing
+                (ICASSP). IEEE</span>, 2022.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9747040"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+              </p>
+              <hr>
+
+              <p>
+                Junkai Ji, Jiajun Zhao, Qiuzhen Lin, and Kay Chen Tan. "Competitive Decomposition-Based Multiobjective Architecture
+                Search for the Dendritic Neural Model."  <span style="font-style: italic;font-weight: bold" >IEEE Transactions on Cybernetics</span> (2022).
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9764663"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+              </p>
+
+              <hr>
+              <p>
+                Junkai Ji, Cheng Tang, Jiajun Zhao, Zheng Tang, and Yuki Todo. "A Survey on Dendritic Neuron Model:
+                Mechanisms, Algorithms and Practical Applications."  <span style="font-style: italic;font-weight: bold" >Neurocomputing</span> (2022).
+                [<a href="https://www.sciencedirect.com/science/article/pii/S0925231222003095"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+
+              <p>
+                Junkai Ji, Minhui Dong, Qiuzhen Lin, and Kay Chen Tan. "Noninvasive Cuffless Blood Pressure Estimation With
+                Dendritic Neural Regression."  <span style="font-style: italic;font-weight: bold" >IEEE Transactions on Cybernetics</span> (2022).
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9703247" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Cheng Tang, Yuki Todo, Junkai Ji, and Zheng Tang. "A novel motion direction detection mechanism based on dendritic
+                computation of direction-selective ganglion cells."  <span style="font-style: italic;font-weight: bold" >Knowledge-Based Systems</span> (2022): 108205.
+                [<a href="https://sciencedirect.53yu.com/science/article/abs/pii/S0950705122000533"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+            </div>
+
+<!--            <div class="header">-->
+<!--              <span>2021</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Zhenyu Song, Cheng Tang, Junkai Ji, Yuki Todo, and Zheng Tang. "A Simple Dendritic Neural Network Model-Based
+                Approach for Daily PM2. 5 Concentration Prediction."  <span style="font-style: italic;font-weight: bold" >Electronics 10, no. 4</span> (2021): 373.
+                [<a href="https://www.mdpi.com/2079-9292/10/4/373" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+              <p>
+                Minhui Dong, Cheng Tang, Junkai Ji, Qiuzhen Lin, and Ka-Chun Wong. "Transmission trend of the COVID-19 pandemic
+                predicted by dendritic neural regression."  <span style="font-style: italic;font-weight: bold" >Applied Soft Computing 111</span> (2021): 107683.
+                [<a href="https://sciencedirect.53yu.com/science/article/pii/S1568494621006049" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+              <p>
+                Shangce Gao, Mengchu Zhou, Ziqian Wang, Daiki Sugiyama, Jiujun Cheng, Jiahai Wang, and Yuki Todo.
+                "Fully complex-valued dendritic neuron model."  <span style="font-style: italic;font-weight: bold" >IEEE Transactions on Neural Networks and Learning Systems</span> (2021).
+                [<a href="https://www.sciencedirect.com/science/article/pii/S0925231222003095" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Xiliang Zhang, Yuki Todo, Cheng Tang, and Zheng Tang. "The Mechanism of Orientation Detection Based
+                on Dendritic Neuron."  <span style="font-style: italic;font-weight: bold" >2021 IEEE 4th International Conference on Big Data and Artificial Intelligence (BDAI).
+                IEEE</span>, 2021.
+                [ <a href="https://ieeexplore.ieee.org/abstract/document/9515286"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Jiajun Zhao, Qiuzhen Lin, and Junkai Ji. "Network Intrusion Detection by an Approximate Logic Neural Model.
+                "  <span style="font-style: italic;font-weight: bold" >2021 IEEE International Symposium on Software Reliability Engineering Workshops (ISSREW). IEEE</span>, 2021.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9700187"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+              <p>
+                Cheng Tang, Zhenyu Song, Yajiao Tang, Huimei Tang, Yuxi Wang, and Junkai Ji. "An Evolutionary Neuron Model
+                with Dendritic Computation for Classification and Prediction."  <span style="font-style: italic;font-weight: bold" >International Conference on Intelligent Computing.
+                Springer, Cham</span>, 2021.
+                [<a href="https://linkspringer.53yu.com/chapter/10.1007/978-3-030-84522-3_2"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+              <p>
+                Junkai Ji, Minhui Dong, Qiuzhen Lin, and Kay Chen Tan. "Forecasting Wind Speed Time Series Via Dendritic Neural
+                Regression."  <span style="font-style: italic;font-weight: bold" >IEEE Computational Intelligence Magazine 16.3</span> (2021): 50-66.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9492146"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+
+              </p>
+
+              <hr>
+              <p>
+                Zhenyu Song, Cheng Tang, Jin Qian, Bin Zhang, and Yuki Todo. "Air Quality Estimation Using Dendritic Neural
+                Regression with Scale-Free Network-Based Differential Evolution."  <span style="font-style: italic;font-weight: bold" >Atmosphere 12.12 </span>(2021): 1647.
+                [<a href="https://www.mdpi.com/2073-4433/12/12/1647"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+              <p>
+                Shuangbao Song, Xingqian Chen, Shuangyu Song, and Yuki Todo. "A neuron model with dendrite morphology for
+                classification."  <span style="font-style: italic;font-weight: bold" >Electronics 10.9</span> (2021): 1062.
+                [<a href="https://www.mdpi.com/2079-9292/10/9/1062"><span style="font-weight: bold;text-decoration: underline">Link</span> </a>]<br>
+
+              </p>
+              <hr>
+            </div>
+
+<!--            <div class="header">-->
+<!--              <span>2020</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Junkai Ji, Yajiao Tang, Lijia Ma, Jianqiang Li, Qiuzhen Lin, Zheng Tang, and Yuki Todo.
+                "Accuracy Versus Simplification in an Approximate Logic Neural Model.
+                "<span style="font-style: italic;font-weight: bold" > IEEE Transactions on Neural Networks and Learning Systems </span>
+                (2020).
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9250635/"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+              <p>
+                Cheng Tang, Junkai Ji, Yajiao Tang, Shangce Gao, Zheng Tang, and Yuki Todo.
+                "A novel machine learning technique for computer-aided diagnosis."
+                <span style="font-style: italic;font-weight: bold" >Engineering Applications of Artificial Intelligence </span>
+                92 (2020): 103627.
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0952197620300889"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+              <p>
+                Zhenyu Song, Yajiao Tang, Junkai Ji, and Yuki Todo. "Evaluating a dendritic neuron model for wind speed
+                forecasting." <span style="font-style: italic;font-weight: bold" >Knowledge-Based Systems </span>201 (2020): 106052.
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705120303415"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+              </p>
+              <hr>
+              <p>
+                Xiaoxiao Qian, Cheng Tang, Yuki Todo, Qiuzhen Lin, and Junkai Ji.
+                "Evolutionary Dendritic Neural Model for Classification Problems."
+                <span style="font-style: italic;font-weight: bold" > Complexity </span>2020 (2020).
+                [<a href="https://www.hindawi.com/journals/complexity/2020/6296209/"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Jiajun Zhao, Minhui Dong, Cheng Tang, Junkai Ji, and Ying He.
+                "Improving Approximate Logic Neuron Model by Means of a Novel Learning Algorithm."
+                <span style="font-style: italic;font-weight: bold" >In International Conference on Intelligent Computing</span>, pp. 484-496. Springer, Cham, 2020.
+                [<a href="https://link.springer.com/chapter/10.1007/978-3-030-60799-9_42"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Junkai Ji, Minhui Dong, Cheng Tang, Jiajun Zhao, and Shuangbao Song.
+                "A Novel Plastic Neural Model with Dendritic Computation for Classification Problems."
+                In <span style="font-style: italic;font-weight: bold" >International Conference on Intelligent Computing</span>
+                , pp. 471-483. Springer, Cham, 2020.
+                [<a href="https://link.springer.com/chapter/10.1007/978-3-030-60799-9_41"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+              <p>
+                Zhenyu Song, Tianle Zhou, Xuemei Yan, Cheng Tang, and Junkai Ji.
+                "Wind Speed Time Series Prediction Using a Single Dendritic Neuron Model."
+                In <span style="font-style: italic;font-weight: bold" >2020 2nd International Conference on Machine Learning,
+            Big Data and Business Intelligence (MLBDBI)</span>, pp. 140-144. IEEE, 2020.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9360996"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+            </div>
+
+
+
+
+<!--            <div class="header">-->
+<!--              <span>2019</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Junkai Ji, Shuangbao Song, Yajiao Tang, Shangce Gao, Zheng Tang, and Yuki Todo.
+                "Approximate logic neuron model trained by states of matter search algorithm."
+                <span style="font-style: italic;font-weight: bold" >Knowledge-Based Systems </span>163 (2019): 120-130.
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705118304167" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+              <p>
+                Yuki Todo, Zheng Tang, Hiroyoshi Todo, Junkai Ji, and Kazuya Yamashita.
+                "Neurons with multiplicative interactions of nonlinear synapses."
+                <span style="font-style: italic;font-weight: bold" >International journal of neural systems </span>29, no. 08 (2019):
+                1950012.
+                [<a href="https://www.worldscientific.com/doi/abs/10.1142/S0129065719500126" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+              <p>
+                Tang, Yajiao, Junkai Ji, Yulin Zhu, Shangce Gao, Zheng Tang, and Yuki Todo.
+                "A differential evolution-oriented pruning neural network model for bankruptcy prediction."
+                <span style="font-style: italic;font-weight: bold" >Complexity </span>2019 (2019).
+                [<a href="https://www.hindawi.com/journals/complexity/2019/8682124/" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Shuangyu Song, Xingqian Chen, Cheng Tang, Shuangbao Song, Zheng Tang, and Yuki Todo.
+                "Training an approximate logic dendritic neuron model using social learning particle swarm
+                optimization algorithm."
+                <span style="font-style: italic;font-weight: bold" > IEEE Access</span> 7 (2019): 141947-141959.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/8853321" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Jingyao Wu, Jiaxin He, and Yuki Todo. "The dendritic neuron model is a universal approximator." In
+                <span style="font-style: italic;font-weight: bold" >2019 6th International Conference on Systems and
+                Informatics (ICSAI)</span>, pp. 589-594. IEEE, 2019.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9010178"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+              <p>
+                Fei Teng, and Yuki Todo. "Dendritic Neuron Model and Its Capability of Approximation." In
+                <span style="font-style: italic;font-weight: bold" >2019 6th International Conference on
+                    Systems and Informatics (ICSAI)</span>, pp. 542-546. IEEE, 2019.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9010147"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+              <p>
+                Jiaxin He, Jingyao Wu, Guangchi Yuan, and Yuki Todo. "Dendritic Branches of DNM Help to
+                Improve Approximation accuracy." In <span style="font-style: italic;font-weight: bold" >
+                2019 6th International Conference on Systems and Informatics (ICSAI)</span>, pp. 533-541. IEEE, 2019.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9010196"><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+
+              <hr>
+            </div>
+
+
+<!--            <div class="header">-->
+<!--              <span>2018</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Junkai Ji. "The improvement and hybridization of artificial neural networks and swarm intelligence."
+                <span style="font-style: italic;font-weight: bold" >Doctoral dissertation, University of Toyama</span>, 2018.
+                [<a href="https://ci.nii.ac.jp/naid/500001086816/" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+            </div>
+
+<!--            <div class="header">-->
+<!--              <span>2017</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Tao Jiang, Shangce Gao, Dizhou Wang, Junkai Ji, Yuki Todo, and Zheng Tang.
+                "A neuron model with synaptic nonlinearities in a dendritic tree for liver disorders."
+                <span style="font-style: italic;font-weight: bold" >IEEJ Transactions on Electrical and Electronic Engineering</span>
+                12, no. 1 (2017): 105-115.
+                [<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/tee.22350" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+              <p>
+                Wei Chen, Jian Sun, Shangce Gao, Jiu-Jun Cheng, Jiahai Wang, and Yuki Todo.
+                "Using a single dendritic neuron to forecast tourist arrivals to Japan."
+                <span style="font-style: italic;font-weight: bold" >IEICE Transactions on Information and Systems</span>
+                100, no. 1 (2017): 190-202.
+                [<a href="https://search.ieice.org/bin/summary.php?id=e100-d_1_190" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+              <p>
+                Ying Yu, Yirui Wang, Shangce Gao, and Zheng Tang.
+                "Statistical modeling and prediction for tourism economy using dendritic neural network."
+                <span style="font-style: italic;font-weight: bold" >Computational intelligence and neuroscience</span> 2017 (2017).
+                [<a href="https://www.hindawi.com/journals/cin/2017/7436948/" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+            </div>
+
+<!--            <div class="header">-->
+<!--              <span>2016</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Junkai Ji, Shangce Gao, Jiujun Cheng, Zheng Tang, and Yuki Todo.
+                "An approximate logic neuron model with a dendritic structure,"
+                <span style="font-style: italic;font-weight: bold" >Neurocomputing</span> 173 (2016): 1775-1783.
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0925231215013612" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+              <p>
+                Tianle Zhou, Shangce Gao, Jiahai Wang, Chaoyi Chu, Yuki Todo, and Zheng Tang.
+                "Financial time series prediction using a dendritic neuron model."
+                <span style="font-style: italic;font-weight: bold" >Knowledge-Based Systems</span> 105 (2016): 214-224.
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705116301216" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+              <p>
+                Junkai Ji, Zhenyu Song, Yajiao Tang, Tao Jiang, and Shangce Gao.
+                "Training a dendritic neural model with genetic algorithm for classification problems." In
+                <span style="font-style: italic;font-weight: bold" >2016 International Conference on Progress in Informatics
+            and Computing (PIC)</span>, pp. 47-50. IEEE, 2016.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/7949465" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+            </div>
+
+
+<!--            <div class="header">-->
+<!--              <span>2015</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Zijun Sha, Lin Hu, Yuki Todo, Junkai Ji, Shangce Gao, and Zheng Tang.
+                "A breast cancer classifier using a neuron model with dendritic nonlinearity."
+                <span style="font-style: italic;font-weight: bold" >IEICE Transactions on Information and Systems</span>
+                98, no. 7 (2015): 1365-1376.
+                [<a href="https://search.ieice.org/bin/summary.php?id=e98-d_7_1365" ><span style="font-weight: bold;text-decoration: underline">Link</span>
+              </a>]<br>
+
+
+              </p>
+              <hr>
+
+              <p>
+                Tao Jiang, Dizhou Wang, Junkai Ji, Yuki Todo, and Shangce Gao.
+                "Single dendritic neuron with nonlinear computation capacity: A case study on xor problem." In
+                <span style="font-style: italic;font-weight: bold" >2015 IEEE International Conference on Progress in Informatics
+        and Computing</span> (PIC), pp. 20-24. IEEE, 2015.
+                [<a href="https://ieeexplore.ieee.org/abstract/document/7489802" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              <hr>
+
+
+
+
+            </div>
+
+<!--            <div class="header">-->
+<!--              <span>2014</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Yuki Todo, Hiroki Tamura, Kazuya Yamashita, and Zheng Tang.
+                "Unsupervised learnable neuron model with nonlinear interaction on dendrites."
+                <span style="font-style: italic;font-weight: bold" >Neural Networks</span> 60 (2014): 96-103.
+                [<a href="https://www.sciencedirect.com/science/article/abs/pii/S0893608014001774" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+            </div>
+
+<!--            <div class="header">-->
+<!--              <span>2001</span>-->
+<!--            </div>-->
+            <div>
+              <p>
+                Zheng Tang, Hiroki Tamura, Makoto Kuratu, Okihiko Ishizuka, and Koichi Tanno.
+                "A model of the neuron based on dendrite mechanisms."
+                <span style="font-style: italic;font-weight: bold" >Electronics and Communications in Japan
+            (Part III: Fundamental Electronic Science) </span>84, no. 8 (2001): 11-24.
+                [<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/ecjc.1024" ><span style="font-weight: bold;text-decoration: underline">Link</span></a>]<br>
+
+
+              </p>
+              <hr>
+
+            </div>
+          </div>
+
+
+
+<!--            <ol class="col-md-offset-1">-->
+
+<!--              <li class="ir hci">Chen, H., Fan, H., Chau, M., and Zeng, D.-->
+<!--                "<a id="pubs" href="./papers/MetaSpider.pdf" target="_blank">MetaSpider: Meta-Searching-->
+<!--                  and Categorization on the Web</a>,"-->
+<!--                <i>Journal of the American Society for Information Science and Technology (JASIST)</i>,-->
+<!--                52(13), 1134-1147, 2001.</li>-->
+<!--            </ol>-->
+
+            <!-- <a class="btn btn-primary btn-sm" href="#">Back to top &raquo;</a> -->
+            <p></p>
+          </div>
+        </div>
+      </div>
+  
+    </section>
+
+    <section id="conference">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+
+            <h2 id="5" style="color:skyblue">Awards</h2>
+            <br>
+            <br>
+
+            <img src="award/JZ1.jpg" style="height:571px;width:800px" class="img-responsive col-md-offset-2"/>
+<!--            <div class="lead" style="text-align:center;color:orange">清远古龙峡漂流一游</div>-->
+              <br>
+              <br>
+            <img src="award/JZ1.jpg" style="height:571px;width:800px" class="img-responsive col-md-offset-2"/>
+<!--            <div class="lead" style="text-align:center;color:orange">清远古龙峡漂流一游</div>-->
+
+
+<!--            <ol class="col-md-offset-1">-->
+
+
+
+<!--              <li class="fintech">Yen, J., Chung, A., Ho, H., Tam, B., Lau, R., Chau, M., and Hwang, K.-->
+<!--                "<a id="pubs" href="./papers/FinancialMultiAgent.pdf" target="_blank">Collaborative and-->
+<!--                  Scalable Financial Analysis with Multi-agent Technology</a>,"-->
+<!--                in <i>Proceedings of the Thirty-Second Hawaii International Conference on-->
+<!--                  System Sciences (HICSS-32)</i>,-->
+<!--                Maui, Hawaii, USA, January 5-8, 1999.</li>-->
+<!--            </ol>-->
+
+
+            <!-- <a class="btn btn-primary btn-sm" href="#">Back to top &raquo;</a> -->
+            <p>
+              <br>
+              <br>
+              <a class="btn btn-primary btn-sm col-md-offset-1" style="margin-bottom:20px" href="#">Back to top &raquo;</a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+
+<div class="foot container-fluid " style="background:url(./img/学校图.png) no-repeat;background-size:100% 100%;opacity:0.9;" >
+<!--  <div style="margin-bottom:20px;margin-top:20px"><img class="img-responsive center-block" src="./img/实验室666.png"/></div>-->
+  <div class="col-sm-4 my-4" style="margin-bottom:40px">
+    <img class="img-responsive center-block" src="./img2/add.png"style="margin-bottom:10px;width:40px;height:40px"/>
+    <p class="lead text-primary" style="text-align:center;color:white">通讯地址</p>
+    <p class="lead text-primary" style="text-align:center;color:white">广东省深圳市南山区深圳大学沧海校区致真楼10楼</p>
+  </div>
+  <div class="col-sm-4 my-4" style="margin-bottom:40px">
+    <img class="img-responsive center-block" src="./img2/tel.png" style="margin-bottom:10p;width:40px;height:40pxx"/>
+    <p class="lead text-primary" style="text-align:center;color:white">联系电话</p>
+    <p class="lead text-primary" style="text-align:center;color:white">0755-26946884</p>
+  </div>
+  <div class="col-sm-4 my-4" style="margin-bottom:40px">
+    <img class="img-responsive center-block" src="./img2/eml.png" style="margin-bottom:10px;width:40px;height:40px"/>
+    <p class="lead text-primary" style="text-align:center;color:white">电子邮件</p>
+    <p class="lead text-primary" style="text-align:center;color:white"><script language=JavaScript>rewin1="jijunkai";rewin2="szu";rewin3=".edu.cn";document.write(rewin1+'@'+rewin2+rewin3);</script>
+      </h2></p>
+  </div>
+  <p>     </p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="src/css/jquery-3.4.1.js"></script>
+<script src="src/css/bootstrap.min.js"></script>
+<script src="src/css/common.js"></script>
+</html>
+
+
+
+
+
+
+<!--                </div>-->
+
+<!--            </div>-->
+<!--       </div>-->
